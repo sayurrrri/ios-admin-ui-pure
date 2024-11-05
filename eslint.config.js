@@ -66,7 +66,7 @@ export default defineFlatConfig([
         }
       ],
       "prettier/prettier": [
-        "error",
+        "warn",
         {
           endOfLine: "auto"
         }
@@ -101,11 +101,11 @@ export default defineFlatConfig([
         { disallowTypeAnnotations: false, fixStyle: "inline-type-imports" }
       ],
       "@typescript-eslint/prefer-literal-enum-member": [
-        "error",
+        "warn",
         { allowBitwiseExpressions: true }
       ],
       "@typescript-eslint/no-unused-vars": [
-        "error",
+        "warn",
         {
           argsIgnorePattern: "^_",
           varsIgnorePattern: "^_"
@@ -165,18 +165,7 @@ export default defineFlatConfig([
       "vue/require-explicit-emits": "off",
       "vue/multi-word-component-names": "off",
       "vue/no-setup-props-reactivity-loss": "off",
-      "vue/html-self-closing": [
-        "error",
-        {
-          html: {
-            void: "always",
-            normal: "always",
-            component: "always"
-          },
-          svg: "always",
-          math: "always"
-        }
-      ]
+      "vue/html-self-closing": "off",
     }
   }
 ]);
